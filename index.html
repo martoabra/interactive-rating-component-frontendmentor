@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
+    <main>
+        <div class="container">
+            <div class="row g-5 justify-content-evenly">
 
-  <!-- Rating state start -->
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8">
+                    <div class="card">
 
-  How did we do?
+                        <div class="main-container rounded-4">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+                            <img src="./images/icon-star.svg" alt="start">
 
-  1 2 3 4 5
+                            <h1> How did we do?</h1>
 
-  Submit
+                            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-  <!-- Rating state end -->
+                            <ul>
+                                <li><button class="btn">1</button></li>
+                                <li><button class="btn">2</button></li>
+                                <li><button class="btn">3</button></li>
+                                <li><button class="btn">4</button></li>
+                                <li><button class="btn">5</button></li>
+                            </ul>
 
-  <!-- Thank you state start -->
+                            <button class="btn-submit" id="submit">SUBMIT</button>
+                        </div>
 
-  You selected <!-- Add rating here --> out of 5
+                        <!-- Rating state end -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  Thank you!
+        <div class="row g-5 justify-content-evenly">
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6">
+                <div class="card">
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+                    <div class="thank-you hidden rounded-4">
+                        <img src="./images/illustration-thank-you.svg" alt="mobile">
+                        <p class="gray">You selected
+                            <span id="rating">0</span> out of 5</p>
+                        <h2>Thank you!</h2>
+                        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+                        </p>
+                    </div>
 
-  <!-- Thank you state end -->
+                </div>
+            </div>
+        </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </main>
 </body>
+
 </html>
